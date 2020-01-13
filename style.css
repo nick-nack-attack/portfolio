@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+footer {
+    margin-bottom: 30px;
+}
+
+section {
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+a {
+    color: blue;
+}
+
+a:hover, a:focus {
+    color: rgb(180, 0, 0);
+}
+
+#skittles_text {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+.beginning-end-copy {
+    font-size: 15px;
+    color: rgb(201, 201, 201);
+}
+
+img {
+    border: 1px rgb(226, 226, 226) solid;
+}
+
+img.primary_showcase_image {
+    width: 250px;
+}
+
+img.secondary_showcase_image {
+    width: 250px;
+}
+
+.showcase_captions {
+    font-size: 12px;
+    margin: 0;
+}
+
+.side {
+    display: none;
+}
+
+.desktop_text {
+    display: none;
+}
+
+/*
+.contact-me-link {
+    border: blue solid 1px;
+    margin: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+} */
+
+.contact-me-link:hover, .contact-me-link:focus {
+    border: rgb(180, 0, 0) 1px solid;
+}
+
+button {
+    border: 1px blue solid;
+    border-radius: 10px;
+    width: 250px;
+    height: 75px;
+    color: blue;
+    font-size: 20px;
+    margin: 25px auto;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover, button:focus {
+    background-color: blue;
+    color: white;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+button.disabled {
+    border: grey 1px solid;
+    background-color: transparent;
+    color: grey;
+}
+
+button.disabled:hover {
+    background-color: rgb(212, 212, 212);
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+@media only screen and (min-width: 320px) {
+    body {
+        background-color: rgb(255, 255, 240);
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    body {
+        background-color: honeydew;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: whitesmoke;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    main {
+        width: 650px;
+
+    }
+
+    img.side {
+        display: inline-flex;
+        width: 200px;
+    }
+
+    div.showcase_images {
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+
+    img.secondary_showcase_image {
+        width: 200px;
+    }
+
+    img.primary_showcase_image {
+        width: 200px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    div.showcase_item_buttons_bar>button {
+        width: 125px;
+        margin: 0;
+    }
+
+    .contact_me_button_bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop_text {
+        display: block;
+    }
+
+    .mobile_text {
+        display: none;
+    }
+
+    .portfolio_intro {
+        width: 500px;
+    }
+
+    .portfolio_intro {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

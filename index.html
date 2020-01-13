@@ -4,31 +4,73 @@
 <head>
     <title>Nick's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <main role="main">
-        <header role="banner">
-            <h1>Title</h1>
-        </header>
         <section>
-            Intro Section
+            <p class="beginning-end-copy">// Start of content</p>
+            <header role="banner">
+                <h2>lang="eng"</h2>
+            </header>
+        </section>
+        <section class="portfolio_intro">
+            <h1>I'm Nick</h1>
+            <p class="mobile_text">(Future) full-stack developer and UI/UX specialist.</p>
+            <p class="desktop_text">I am a collection of atoms ... and a (future) full-stack developer and and a (current) UI/UX specialist.</p>
+            <p class="desktop_text">And <a href="https://www.youtube.com/watch?v=RgHtBxOs4qw">I feel pretty oh so pretty</a>.</p>
+            <p class="desktop_text">I am a (future) web developer and (future) recent graduate of the Front End Web Development bootcamp at Thinkful.</p>
+            <p class="desktop_text">I love coding because it's the most effective way to help people <a href="https://lmgtfy.com/?q=imho">imho</a>.</p>
+            <p class="desktop_text">I want to be like one of them Facebook boys. Okay? All the Twitters, <a href="https://www.youtube.com/watch?v=pS-cdGjIVaI">I want to know them</a>.</p>
+            <p>I love Wikipedia, avoiding ionizing radiation, and <a href="https://www.duolingo.com/">Duolingo</a>'ing.
+            </p>
+            <p>My mission?<br>To be of maximum service to those around me.</p>
+            <p>... I love <span id="skittles_text">Skittles</span>, too.</p>
         </section>
         <section>
-            Portfolio Photos
+            <h2>My Work</h2>
+            <div class="showcase_1">
+                <div class="showcase_images"></div>
+                <img class="primary_showcase_image side" src="images/pineapple_quiz_screenshot_2.jpg" alt="answering a question correctly in the pineapple quiz">
+                <img class="primary_showcase_image" src="images/pineapple_quiz_screenshot_1.jpg" alt="the first question of the pineapple quiz">
+                <img class="primary_showcase_image side" src="images/pineapple_quiz_screenshot_3.jpg" alt="answering a question incorrectly in the pineapple quiz">
+                <img class="secondary_showcase_image" src="images/pineapple_quiz_asset_1.jpg" alt="pineapple afraid of being cut up and put on a steak">
+                <img class="secondary_showcase_image" src="images/pineapple_quiz_asset_2.jpg" alt="a perplexed pineapple on top of three pineapples">
+                <img class="secondary_showcase_image" src="images/pineapple_quiz_asset_3.jpg" alt="a pineapple exploding">
+            </div>
+            <p class="showcase_captions">2020</p>
+            <h3>The Finest Pineapple Quiz</h3>
+            <p class="showcase_captions showcase_captions_bottom"> <i class="fab fa-html5"></i> HTML, <i class="fab fa-css3-alt"></i> CSS, <i
+                    class="fab fa-js-square"></i> Javascript | Assignment | Thinkful Bootcamp</p>
+            <p class="item_description">This quiz tests your knowledge of pineapples. It is administered by a
+                loquacious pineapple. However incorrigible this fruit is, nay we forget its indescribable
+                deliciousness.</p>
+            <div class="showcase_item_buttons_bar">
+                <button id="pineapple_live_link" class="showcase_button" onclick="window.location='https://nick-nack-attack.github.io/final-pineapple-quiz/';">Play the quiz</button>
+                <button id="pineapple_git_link" class="showcase_button" onclick="window.location='https://github.com/nick-nack-attack/final-pineapple-quiz.git';">View on github</button>
+            </div>
+            </div>
         </section>
-        <section>
-            Portfolio description
-        </section>
-        <section>
-            Contact info
+        <div class="section_break">
+            <p><i class="fas fa-gem"></i></p>
+        <section class="contact_me_button_bar">
+            <h2>... and that's it for now.</h2>
+            <button class="contact-button" onclick="window.location='mailto:nick-nack-attack@gmail.com';"><i class="fas fa-envelope-square"></i> My Email</button>
+            <button class="contact-button" onclick="window.location='https://gist.github.com/nick-nack-attack';"><i class="fab fa-github"></i> My GitHub</button>
+            <button class="contact-button" onclick="window.location='https://www.linkedin.com/in/nick-l-291629aa/';"><i class="fab fa-linkedin"></i> My LinkedIn</button>
+            <!-- <a href="https://www.linkedin.com/in/nick-l-291629aa/" class="contact-me-link">My LinkedIn</a> -->
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">
+        <p class="beginning-end-copy">// End of content</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
