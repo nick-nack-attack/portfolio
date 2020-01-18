@@ -41,24 +41,33 @@ a {
     color: blue;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: rgb(180, 0, 0);
 }
 
 #skittles_text {
     background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
     text-align: center;
-    background-size: 800% 800%; 
+    background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
     animation: rainbow 8s ease infinite;
 }
 
-@keyframes rainbow { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 50%}
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .beginning-end-copy {
@@ -87,21 +96,8 @@ img.secondary_showcase_image {
     display: none;
 }
 
-.desktop_text {
-    display: none;
-}
-
-/*
-.contact-me-link {
-    border: blue solid 1px;
-    margin: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-} */
-
-.contact-me-link:hover, .contact-me-link:focus {
+.contact-me-link:hover,
+.contact-me-link:focus {
     border: rgb(180, 0, 0) 1px solid;
 }
 
@@ -117,7 +113,8 @@ button {
     background-color: transparent;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     background-color: blue;
     color: white;
     -webkit-transition: background-color 0.5s ease;
@@ -196,9 +193,10 @@ button.disabled:hover {
     button {
         height: 50px;
         font-size: 15px;
+        margin-bottom: 5px;
     }
 
-    div.showcase_item_buttons_bar>button {
+    div.showcase_item_buttons_bar > button {
         width: 125px;
         margin: 0;
     }
@@ -210,10 +208,6 @@ button.disabled:hover {
 
     .desktop_text {
         display: block;
-    }
-
-    .mobile_text {
-        display: none;
     }
 
     .portfolio_intro {
