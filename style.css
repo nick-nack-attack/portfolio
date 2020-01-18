@@ -24,16 +24,27 @@ section {
 }
 
 h1 {
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 25px;
 }
 
 h2 {
     font-size: 20px;
+    font-weight: bold;
+}
+
+h2::before {
+    content: "\f100";
+    font-family: fontAwesome;
+}
+
+h2::after {
+    content: "\f101";
+    font-family: fontAwesome;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bolder;
     margin: 0;
 }
 
@@ -196,7 +207,7 @@ button.disabled:hover {
         margin-bottom: 5px;
     }
 
-    div.showcase_item_buttons_bar > button {
+    div.showcase_item_buttons_bar>button {
         width: 125px;
         margin: 0;
     }
