@@ -20,31 +20,19 @@ footer {
 }
 
 section {
-    margin: 30px auto;
+    margin: auto;
+    margin-bottom: 150px;
 }
 
 h1 {
     font-size: 25px;
+    margin: 50px auto;
 }
 
 h2 {
     font-size: 20px;
     font-weight: bold;
 }
-
-/* 
-
-h2::before {
-    content: "\f101";
-    font-family: fontAwesome;
-}
-
-h2::after {
-    content: "\f100";
-    font-family: fontAwesome;
-}
-
-*/
 
 h3 {
     font-size: 18px;
@@ -85,11 +73,6 @@ a:focus {
     }
 }
 
-.beginning-end-copy {
-    font-size: 15px;
-    color: rgb(201, 201, 201);
-}
-
 img {
     border: 1px rgb(226, 226, 226) solid;
 }
@@ -114,14 +97,6 @@ img.secondary_showcase_image {
 .contact-me-link:hover,
 .contact-me-link:focus {
     border: rgb(180, 0, 0) 1px solid;
-}
-
-#intro-section {
-    margin-bottom: 100px;
-}
-
-#projects-section {
-    margin-bottom: 100px;
 }
 
 button {
@@ -237,7 +212,6 @@ button.disabled:hover {
         width: 500px;
         padding-left: 30px;
         padding-right: 30px;
-        margin-bottom: 150px;
     }
 
 }
