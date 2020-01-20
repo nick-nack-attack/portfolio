@@ -32,15 +32,19 @@ h2 {
     font-weight: bold;
 }
 
+/* 
+
 h2::before {
-    content: "\f100";
+    content: "\f101";
     font-family: fontAwesome;
 }
 
 h2::after {
-    content: "\f101";
+    content: "\f100";
     font-family: fontAwesome;
 }
+
+*/
 
 h3 {
     font-size: 18px;
@@ -110,6 +114,14 @@ img.secondary_showcase_image {
 .contact-me-link:hover,
 .contact-me-link:focus {
     border: rgb(180, 0, 0) 1px solid;
+}
+
+#intro-section {
+    margin-bottom: 100px;
+}
+
+#projects-section {
+    margin-bottom: 100px;
 }
 
 button {
@@ -212,7 +224,7 @@ button.disabled:hover {
         margin: 0;
     }
 
-    .contact_me_button_bar {
+    #contact-section {
         display: flex;
         flex-direction: column;
     }
@@ -221,12 +233,11 @@ button.disabled:hover {
         display: block;
     }
 
-    .portfolio_intro {
+    #intro-section {
         width: 500px;
-    }
-
-    .portfolio_intro {
         padding-left: 30px;
         padding-right: 30px;
+        margin-bottom: 150px;
     }
+
 }

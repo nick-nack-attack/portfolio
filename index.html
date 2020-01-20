@@ -24,17 +24,16 @@
 
 <body>
 
-    <main role="main">
+    <main>
 
         <section>
-            <p class="beginning-end-copy">// Start of content</p>
-            <header role="banner">
+            <header>
                 <h1>Good <span id="period-of-day"></span></h1>
             </header>
         </section>
 
-        <section class="portfolio_intro">
-            <p>I'm Nick Farni</p>
+        <section id="intro-section">
+            <h2>I'm Nick Farni</h2>
             <p>(Future) full-stack developer<br>and UI/UX specialist.</p>
             <p>I love Wikipedia, avoiding<br>ionizing radiation, and<br><a href="https://www.duolingo.com/"
                     target="_blank">Duolingo</a>'ing.
@@ -43,7 +42,7 @@
             <p>... I love <span id="skittles_text">Skittles</span>, too.</p>
         </section>
 
-        <section>
+        <section id="projects-section">
             <h2> My Work </h2>
             <div class="showcase_1">
                 <div class="showcase_images"></div>
@@ -60,6 +59,7 @@
                 <img class="secondary_showcase_image" src="images/pineapple_quiz_asset_3.jpg"
                     alt="a pineapple exploding">
             </div>
+
             <p class="showcase_captions">2020</p>
             <h3>The Finest Pineapple Quiz</h3>
             <p class="showcase_captions showcase_captions_bottom"><i class="fab fa-html5"></i> HTML <i
@@ -67,6 +67,7 @@
             <p class="item_description">This quiz tests your knowledge of pineapples. It is administered by a
                 loquacious pineapple. However incorrigible this fruit is, nay we forget its indescribable
                 deliciousness. Assignment for Thinkful Bootcamp.</p>
+
             <div class="showcase_item_buttons_bar">
                 <button id="pineapple_live_link" class="showcase_button"
                     onclick="window.open('https://nick-nack-attack.github.io/final-pineapple-quiz/','_blank')">Play the
@@ -76,13 +77,10 @@
                     on
                     github</button>
             </div>
-            </div>
+
         </section>
 
-        <div class="section_break">
-            <p><i class="fas fa-gem"></i></p>
-        </div>
-        <section class="contact_me_button_bar">
+        <section id="contact-section">
             <h2> Contact info </h2>
             <button class="contact-button" onclick="window.open('mailto:nick-nack-attack@gmail.com','_blank')"><i
                     class="fas fa-envelope-open-text"></i> My Email</button>
@@ -92,13 +90,13 @@
                 onclick="window.open('https://www.linkedin.com/in/nick-l-291629aa/','_blank')"><i
                     class="fab fa-linkedin-in"></i> My LinkedIn</button>
         </section>
+
     </main>
-    <footer role="content-info">
-        <p class="beginning-end-copy">// End of content</p>
-    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
 </body>
 
 </html>
