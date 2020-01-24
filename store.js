@@ -1,5 +1,5 @@
 const STORE = [{
-        showcaseImage: ["primaryShowcaseImage","",""],
+        showcaseImage: ["primaryShowcaseImage","images/showcase_image_pineapple.jpg","image showing showcase of pineapple quiz"],
         yearCreated: 2020,
         titleOfProject: "The Finest Pineapple Quiz",
         techUsed: ["HTML", "CSS", "Javascript"],
@@ -8,7 +8,7 @@ const STORE = [{
         repoLink: "https://github.com/nick-nack-attack/final-pineapple-quiz.git",
     },
     {
-        showcaseImage: [],
+        showcaseImage: ["primaryShowcaseImage","images/showcase_image_flee.jpg","image showing showcase of charity api app"],
         yearCreated: 2020,
         titleOfProject: "Flee to a Charity",
         techUsed: ["HTML", "CSS", "Javascript"],
