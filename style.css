@@ -168,6 +168,10 @@ margin-bottom: 30px;
 
     }
 
+    .contact-button {
+        margin-bottom: 0px;
+    }
+
     .desktop_text {
         display: block;
     }
