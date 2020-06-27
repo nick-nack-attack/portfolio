@@ -11,10 +11,8 @@ function checkTime() {
 function determineTime(now) {
     if (21 < now && now <= 24) {
         $('#period-of-day').text('Night');
-        enableDarkMode();
     } else if (0 < now && now <= 4) {
         $('#period-of-day').text('Night');
-        enableDarkMode();
     } else if (4 < now && now <= 12) {
         $('#period-of-day').text('Morning');
     } else if (12 < now && now <= 18) {
@@ -39,8 +37,9 @@ function generateImage(img) {
 // function to map through each tech used on a project
 function generateTechUsed(array) {
     return array
-        .map(tech => `${tech} ` )
+        .map(tech => `<span class="tech-label">${tech}</span>` )
         .join(' ')
+        
 };
 
 // created func to generate all buttons attached to a project
@@ -70,9 +69,9 @@ function generateShowcase(array) {
                         <p class="showcase_captions">
                             ${project.yearCreated}
                         </p>
-                        <h3>
+                        <h2 class="project_title">
                             ${project.titleOfProject}
-                        </h3>
+                        </h2>
                         <p class="showcase_captions showcase_captions_bottom">
                             ${generateTechUsed(project.techUsed)}
                         </p>
@@ -151,9 +150,6 @@ $(window).on("scroll", function() {
 
 })
 
-
-
-
 // Get the offset position of the navbar
 let sticky = myWorkHeader.offsetTop;
 
@@ -178,14 +174,6 @@ function myFunction() {
         myWorkHeader.classList.remove("sticky");
     }
   }
-
-// makes everything ... Perfect(ly) Dark :-)
-function enableDarkMode() {
-    // for body
-    let element = document.body;
-    element.classList.toggle("dark-mode");
-};
-
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
@@ -214,6 +202,7 @@ function switchTheme(e) {
             $('button').addClass('dark-button');
             $('body').addClass('dark-mode');
             $('a').addClass('dark')
+            $('.tech-label').addClass('dark-label')
     }
     else {
         document
@@ -224,7 +213,8 @@ function switchTheme(e) {
             localStorage.setItem('theme', 'light');
             $('button').removeClass('dark-button');
             $('body').removeClass('dark-mode');
-            $('a').addClass('dark')
+            $('a').removeClass('dark')
+            $('.tech-label').removeClass('dark-label')
     }
 };
 

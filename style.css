@@ -13,7 +13,7 @@
         --heading-color: #292922;
         /* Project theme colors */
         --SG-theme: #f60001;
-        --TC-theme: #ffcb43;
+        --TC-theme: #F4AA00;
         --RM-theme: #01638e;
         --PQ-theme: #7f5140;
     };
@@ -71,9 +71,17 @@
         -o-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
     }
+
+    blockquote {
+        font-size: 16px;
+        font-style: italic;
+        font-family: monospace;
+        margin: 100px auto;
+    };
     
     footer {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        border-top: lightgray 2px solid;
     }
     
     h1 {
@@ -91,6 +99,11 @@
         font-weight: bolder;
         margin: 0;
     }
+
+    .project_title {
+        font-weight: bold;
+        font-size: x-large;
+    }
     
     main {
         margin-left: auto;
@@ -101,6 +114,26 @@
     section {
         margin: auto;
         margin-bottom: 100px;
+    }
+
+    .theme-switch {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        font-size: 16px;
+        margin-right: 10%;
+    }
+
+    .tech-label {
+        color: white;
+        background-color: black;
+        padding: 2px 10px;
+        min-width: 150px;
+        border-radius: 10px;
+    }
+
+    .dark-label {
+        background-color: #2d2d2e;
     }
 
     ul {
@@ -187,8 +220,9 @@
     };
     
     .showcase_captions {
-        font-size: 15px;
-        margin: 0;
+        font-size: 9px;
+        display: flex;
+        flex-wrap: wrap;
     };
     
 
@@ -215,7 +249,7 @@
 
     /* Change the color of links on hover */
     .my-work-nav a:hover {
-        background-color: #ddd;
+        background-color: lightgray;
         color: black;
     }
 
@@ -223,21 +257,11 @@
     .my-work-nav #SG.active {
         background-color: var(--SG-theme);
         color: white;
-    }
-
-    .my-work-nav li.active {
-        background-color: yellow;
-    }
-
-    #sq_li.active {
-        background-color: var(--SG-theme);
-        color: white;
         -webkit-transition: background-color 0.5s ease;
         -moz-transition: background-color 0.5s ease;
         -o-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
     }
-
 
     .my-work-nav #TC.active {
         background-color: var(--TC-theme);
@@ -336,6 +360,13 @@
         display: flex;
     }
 
+    .fa-linkedin, 
+    .fa-envelope-open-text,
+    .fa-github {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
     .title_tech {
         height: 300px;
         min-width: 300px;
@@ -353,11 +384,14 @@
 
     main {
         width: 90%;
-
     }
 
     .contact-button {
-        margin-bottom: 0px;
+        display: grid;
+        height: 200px;
+        width: 200px;
+        font-size: 18px;
+        margin: auto 20px;
     }
 
     .desktop_text {
@@ -367,7 +401,7 @@
     .left-panel {
         width: 100%;
         padding-right: inherit;
-    };
+    }
 
     .right-panel {
         width: 50%;
@@ -380,7 +414,10 @@
 
     #contact-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
     }
 
     #intro-section {
