@@ -24,42 +24,112 @@
 </head>
 
 <body>
-
     <main>
-
         <header>
-            <h1>Good <span id="period-of-day"></span></h1>
+            <h1>
+                Good
+                <span id="period-of-day"></span>
+            </h1>
+            <button onClick="enableDarkMode()">
+                Toggle Dark Mode
+            </button>
+            <label class="theme-switch" for="checkbox">
+                Dark Mode
+                <input 
+                    type="checkbox"
+                    id="checkbox"    
+                />
+            </label>
         </header>
-
+        <h2>
+            I'm Nick.
+        </h2>
         <section id="intro-section">
-            <h2>I'm Nick</h2>
-            <p>(Future) full-stack developer<br>and UI/UX specialist.</p>
-            <p>(Current) manager of overseas software<br>development teams, social communites, product, branding, marketing<br>... many hats, my head has worn.</p>
-            <p>I love Wikipedia, avoiding<br>ionizing radiation, and<br><a href="https://www.duolingo.com/"
-                    target="_blank">Duolingo</a>'ing.
-            </p>
-            <p>My mission?<br>To be of maximum service to<br>those around me.</p>
-            <p>... I love <span id="skittles_text">Skittles</span>, too.</p>
+            <div class="left-panel">
+                <p>
+                    Full-stack web developer.
+                    UI/UX specialist.
+                </p>
+                <p>
+                    I've managed overseas software
+                    development teams, social communites,
+                    product, branding, and marketing.
+                </p>
+            </div>
+            <div class="right-panel">
+                <p>
+                    I like Wikipedia.
+                    I dislike ionizing radiation.
+                    I am quite fond of <a href="https://www.duolingo.com/" target="_blank">Duolingo</a>.
+                </p>
+                <p>
+                    <h3>My mission? &#128640</h3>
+                    To serve others and be a source of
+                    compassion and encouragement
+                    to those around me.
+                </p>
+                <p>
+                    ... I love <span id="skittles_text">Skittles</span>, too.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <div id="projects-area">
-                <h2> My Work </h2>
+        
+        <nav 
+            class="my-work-nav nav" 
+            id="myWorkNav"
+        >
+            <h2> My Work </h2>
+                <ul>
+                    <li id="pq_li" href="#hero_pq">
+                        <a id="PQ" href="#hero_pq">Pineapple Quiz</a>
+                    </li>
+                    <li id="rm_li">
+                        <a id="RM" href="#hero_rm"> rmbrme </a>
+                    </li>
+                    <li id="tc_li">
+                        <a id="TC" href="#hero_tc"> Truth Checker </a>
+                    </li>
+                    <li id="sg_li">
+                        <a id="SG" href="#hero_sg"> Sober Grid </a>
+                    </li>
+            </ul>
+    </nav>
+        <br/>
+        <br/>
 
+        <section>
+            <div 
+                class="content" 
+                id="projects-area"
+            >
+            </div>
         </section>
 
         <section id="contact-section">
-            <h2>Hit me up at ...</h2>
-            <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="nick-f-291629aa"><a class="LI-simple-link" href='https://www.linkedin.com/in/nick-f-291629aa?trk=profile-badge'>Nick</a></div>
-            <button class="contact-button" onclick="window.open('mailto:nick.nack.attack.1@gmail.com','_blank')"><i
-                    class="fas fa-envelope-open-text"></i> My Email</button>
-            <button class="contact-button" onclick="window.open('https://gist.github.com/nick-nack-attack','_blank')"><i
-                    class="fab fa-github"></i> My GitHub</button>
+            <h2>
+                Hit me up at ...
+            </h2>
+            <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical"
+                data-theme="light" data-vanity="nick-f-291629aa">
+                <a class="LI-simple-link" href='https://www.linkedin.com/in/nick-f-291629aa?trk=profile-badge'>
+                    Nick
+                </a>
+            </div>
+            <button class="contact-button" onclick="window.open('mailto:nick.nack.attack.1@gmail.com','_blank')">
+                <i class="fas fa-envelope-open-text"></i>
+                My Email
+            </button>
+            <button class="contact-button" onclick="window.open('https://gist.github.com/nick-nack-attack','_blank')">
+                <i class="fab fa-github"></i>
+                My GitHub
+            </button>
         </section>
 
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="store.js"></script>
     <script src="index.js"></script>
 </body>

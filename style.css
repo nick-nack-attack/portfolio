@@ -1,160 +1,348 @@
-* {
-    box-sizing: border-box;
-}
-
-/* ELEMENTS */ /* ELEMENTS */ /* ELEMENTS */ /* ELEMENTS */ /* ELEMENTS */
-
-a {
-    color: blue;
-}
-
-a:hover,
-a:focus {
-    color: rgb(180, 0, 0);
-}
-
-body {
-    font-size: 20px;
-    font-family: 'Nanum Gothic', sans-serif;
-    text-align: center;
-    line-height: 1.5;
-}
-
-button {
-    border: 1px blue solid;
-    border-radius: 10px;
-    width: 250px;
-    height: 75px;
-    color: blue;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-button:hover,
-button:focus {
-    background-color: blue;
-    color: white;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
-}
-
-footer {
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 25px;
-    margin: 50px auto;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: bolder;
-    margin: 0;
-}
-
-main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
-
-section {
-    margin: auto;
-    margin-bottom: 100px;
-}
-
-
-/*    ID    */ /*    ID    */ /*    ID    */ /*    ID    */ /*    ID    */
-
-#skittles_text {
-    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
-    text-align: center;
-    background-size: 800% 800%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 24px;
-    animation: rainbow 8s ease infinite;
-}
-
-@keyframes rainbow {
-    0% {
-        background-position: 0% 50%
-    }
-    
-    50% {
-        background-position: 100% 25%
-    }
-    
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-/*  CLASS   */ /*  CLASS   */ /*  CLASS   */ /*  CLASS   */ /*  CLASS   */
-
-.contact-me-link:hover,
-.contact-me-link:focus {
-    border: rgb(180, 0, 0) 1px solid;
-}
-
-.contact-button {
-    margin: 25px auto;
-}
-
-.primaryShowcaseImage {
-    width: 300px;
-}
-
-.showcase_button {
-margin-bottom: 30px;
-}
-
-.showcase_captions {
-    font-size: 15px;
-    margin: 0;
-}
-
-.showcase_item_buttons_bar {
-    margin-bottom: 120px;
-}
-
 @media only screen and (min-width: 320px) {
-    body {
-        background-color: rgb(240, 241, 255);
-        -webkit-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        -o-transition: background-color 0.5s ease;
-        transition: background-color 0.5s ease;
-    }
-}
 
-@media only screen and (min-width: 550px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary-color: #302AE6;
+        --secondary-color: #536390;
+        --link-color: #rgb(0, 0, 255);
+        --font-color: #424242;
+        --bg-color: #fff;
+        --heading-color: #292922;
+        /* Project theme colors */
+        --SG-theme: #f60001;
+        --TC-theme: #ffcb43;
+        --RM-theme: #01638e;
+        --PQ-theme: #7f5140;
+    };
+
+    [data-theme="dark"] {
+        --primary-color: #9A97F3;
+        --secondary-color: #818cab;
+        --link-color: #ffee00;
+        --font-color: #e1e1ff;
+        --bg-color: #161625;
+        --heading-color: #818cab;
+    };
+    
+    /* ELEMENTS */ /* ELEMENTS */ /* ELEMENTS */ /* ELEMENTS */ /* ELEMENTS */
+    
+    a {
+        color: --font-color;
+    }
+    
+    a:hover,
+    a:focus {
+        color: rgb(180, 0, 0);
+    }
+    
     body {
-        background-color: rgb(255, 255, 240);
+        font-size: 20px;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+        line-height: 1.5;
+        color: var(--font-color);
+        background-color: var(--bg-color);
         -webkit-transition: background-color 0.5s ease;
         -moz-transition: background-color 0.5s ease;
         -o-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
     }
     
-}
+    button {
+        border: 1px var(--primary-color) solid;
+        border-radius: 10px;
+        min-width: 150px;
+        height: 75px;
+        color: var(--primary-color);
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+    };
+    
+    button:hover,
+    button:focus {
+        color: white;
+        background-color: var(--primary-color);
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+    
+    footer {
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 25px;
+        margin: 50px auto;
+    }
+    
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 0;
+    }
+    
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    };
+    
+    section {
+        margin: auto;
+        margin-bottom: 100px;
+    }
 
-@media only screen and (min-width: 800px) {
-    body {
+    ul {
+        list-style: none;
+    }
+    
+    /*    ID    */ /*    ID    */ /*    ID    */ /*    ID    */ /*    ID    */
+    
+    #skittles_text {
+        background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        text-align: center;
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 24px;
+        animation: rainbow 8s ease infinite;
+    }
+
+    #projects-area > h2 {
+        text-align: left;
+    }
+    
+    @keyframes rainbow {
+        0% {
+            background-position: 0% 50%
+        }
+        
+        50% {
+            background-position: 100% 25%
+        }
+        
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    /*  CLASS   */ /*  CLASS   */ /*  CLASS   */ /*  CLASS   */ /*  CLASS   */
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+    };
+    
+    .contact-me-link:hover,
+    .contact-me-link:focus {
+        border: rgb(180, 0, 0) 1px solid;
+    }
+    
+    .contact-button {
+        margin: 25px auto;
+    };
+
+    .content {
+        padding: 16px;
+    }
+    
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .dark {
+        background-color: var();
+        color: black;
+    }
+
+    .dark-button {
+        border: 2px white solid;
+        color: white;
+    }
+
+    .showcase {
+        text-align: left;
+        margin-top: 75px;
+    }
+    
+    .showcase_item_buttons_bar {
+        margin-bottom: 120px;
+    };
+
+    .primaryShowcaseImage {
+        width: 300px;
+    };
+    
+    .showcase_captions {
+        font-size: 15px;
+        margin: 0;
+    };
+    
+
+    /* Add a black background color to the top navigation */
+    .my-work-nav {
+        background-color: #333;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    /* Style the links inside the navigation bar */
+    .my-work-nav a {
+        float: right;
+        color: black;
+        background-color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+    }
+
+    .my-work-nav a {
+        text-decoration: none;
+    }
+
+    /* Change the color of links on hover */
+    .my-work-nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .my-work-nav #SG.active {
+        background-color: var(--SG-theme);
+        color: white;
+    }
+
+    .my-work-nav li.active {
+        background-color: yellow;
+    }
+
+    #sq_li.active {
+        background-color: var(--SG-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+
+    .my-work-nav #TC.active {
+        background-color: var(--TC-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav #RM.active {
+        background-color: var(--RM-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav #PQ.active {
+        background-color: var(--PQ-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav h2 {
+        float: left;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The sticky class is added to the header 
+    with JS when it reaches its scroll position */
+    .sticky {
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 100%;
         background-color: whitesmoke;
         -webkit-transition: background-color 0.5s ease;
         -moz-transition: background-color 0.5s ease;
         -o-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
+    };
+
+    /* Add some top padding to the page content to 
+    prevent sudden quick movement (as the header gets 
+    a new position at the top of the page (position:fixed 
+    and top:0) */
+
+    .sticky + .content {
+        padding-top: 102px;
+      }
+
+}
+
+
+@media only screen and (min-width: 550px) {
+
+    /* Responsive layout - makes the three columns stack on top of 
+    each other instead of next to each other on smaller screens 
+    (600px wide or less) */
+    .column {
+        width: 100%;
+    }
+
+    /* body {
+        background-color: rgb(255, 255, 240);
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    } */
+    
+}
+
+@media only screen and (min-width: 800px) {
+
+    body {
+        background-color: var(--bg-color);
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .showcase_content {
+        display: flex;
+    }
+
+    .title_tech {
+        height: 300px;
+        min-width: 300px;
+    }
+
+    .desc_buttons {
+        padding-left: 50px;
     }
 
     button {
@@ -164,7 +352,7 @@ margin-bottom: 30px;
     }
 
     main {
-        width: 650px;
+        width: 90%;
 
     }
 
@@ -175,14 +363,19 @@ margin-bottom: 30px;
     .desktop_text {
         display: block;
     }
+
+    .left-panel {
+        width: 100%;
+        padding-right: inherit;
+    };
+
+    .right-panel {
+        width: 50%;
+        padding-left: inherit;
+    }
     
     .primaryShowcaseImage {
         width: 650px;
-    }
-
-    .showcase_item_buttons_bar>button {
-        width: 125px;
-        margin: 0;
     }
 
     #contact-section {
@@ -190,11 +383,11 @@ margin-bottom: 30px;
         flex-direction: column;
     }
 
-
     #intro-section {
-        width: 500px;
+        display: flex;
         padding-left: 30px;
         padding-right: 30px;
+        text-align: left;
     }
 
 }
