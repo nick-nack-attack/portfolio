@@ -54,9 +54,10 @@
     button {
         border: 1px var(--primary-color) solid;
         border-radius: 10px;
-        min-width: 150px;
+        min-width: 80%;
         height: 75px;
         color: var(--primary-color);
+        margin-bottom: 20px;
         font-size: 20px;
         cursor: pointer;
         background-color: transparent;
@@ -86,7 +87,7 @@
     
     h1 {
         font-size: 25px;
-        margin: 50px auto;
+        margin: 70px auto;
     }
     
     h2 {
@@ -108,7 +109,8 @@
     main {
         margin-left: auto;
         margin-right: auto;
-        width: 300px;
+        min-width: 300px;
+        max-width: 80%;
     };
     
     section {
@@ -138,6 +140,12 @@
 
     ul {
         list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        padding-inline-start: 0;
+        padding: 0;
     }
     
     /*    ID    */ /*    ID    */ /*    ID    */ /*    ID    */ /*    ID    */
@@ -187,8 +195,12 @@
         margin: 25px auto;
     };
 
-    .content {
+    div.content {
         padding: 16px;
+        max-width: 80% !important;
+        margin-right: 0;
+        text-align: center;
+
     }
     
     .dark-mode {
@@ -213,6 +225,7 @@
     
     .showcase_item_buttons_bar {
         margin-bottom: 120px;
+    text-align: center
     };
 
     .primaryShowcaseImage {
@@ -239,7 +252,7 @@
         color: black;
         background-color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 7px 10px;
         font-size: 17px;
     }
 
@@ -308,7 +321,7 @@
         top: 0;
         right: 0;
         width: 100%;
-        background-color: whitesmoke;
+        background-color: white;
         -webkit-transition: background-color 0.5s ease;
         -moz-transition: background-color 0.5s ease;
         -o-transition: background-color 0.5s ease;
@@ -326,27 +339,106 @@
 
 }
 
+.primaryShowcaseImage {
+    max-inline-size: -webkit-fill-available;
+}
+
+.theme-switch {
+    top: 15px;
+    right: 15px;
+    margin: 0;
+}
+
+#intro-section {
+    text-align: left;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.web {
+    display: none;
+}
+
+#my-work {
+    display: none;
+}
+
+.mobile {
+    display: inline;
+}
+
 
 @media only screen and (min-width: 550px) {
 
-    /* Responsive layout - makes the three columns stack on top of 
-    each other instead of next to each other on smaller screens 
-    (600px wide or less) */
-    .column {
-        width: 100%;
+    .my-work-nav a {
+        padding: 14px 16px;
     }
 
-    /* body {
-        background-color: rgb(255, 255, 240);
-        -webkit-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        -o-transition: background-color 0.5s ease;
-        transition: background-color 0.5s ease;
-    } */
-    
+    #my-work {
+        display: initial;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    button {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 7px;
+    }
+
+    ul {
+        font-size: 13px;
+    }
+
+    .web {
+        display: none;
+    }
+
+    #intro-section {
+        text-align: left;
+    }
+
+    .primaryShowcaseImage {
+        max-inline-size: -webkit-fill-available;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .theme-switch {
+        top: 20px;
+        right: 20px;
+        margin: 0;
+    }
+
+    .left-panel {
+        display: unset;
+    }
+
+    .right-panel {
+        display: unset;
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
+
+    li {
+        font-size: unset;
+    }
+
+    #my-work {
+        display: unset;
+    }
+
+    .web {
+        display: unset;
+    }
 
     body {
         background-color: var(--bg-color);
@@ -377,13 +469,14 @@
     }
 
     button {
+        min-width: unset;
         height: 50px;
         font-size: 15px;
         margin-bottom: 5px;
     }
 
     main {
-        width: 90%;
+        width: 90% !important;
     }
 
     .contact-button {
