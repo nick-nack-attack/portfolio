@@ -138,6 +138,7 @@ $(window).on("scroll", function() {
 
         let sectionLink = $(this);
         let section = $(sectionLink.attr('href'));
+        let svgLink = $(this);
 
             // if the top of the section is less than the current position
             // or if the top of the link plus the section height is more than the current 
@@ -145,8 +146,10 @@ $(window).on("scroll", function() {
             if (section.position().top <= currentPos && section.position().top + section.height() >= currentPos) {
             // $('.nav li').removeClass('active');
             sectionLink.addClass('active');
+            sectionLink.children().addClass('active')
         } else {
             sectionLink.removeClass('active');
+            sectionLink.children().removeClass('active')
         }
     })
 

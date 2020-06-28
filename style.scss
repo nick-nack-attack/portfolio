@@ -1,74 +1,65 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 :root {
-  --SG-theme: #f60001;
-  --TC-theme: #FFCB43;
-  --RM-theme: #01638e;
-  --PQ-theme: #7f5140;
-  --primary-color: #302AE6;
-  --secondary-color: #536390;
-  --link-color: #rgb(0, 0, 255);
-  --font-color: #424242;
-  --bg-color: #fff;
-  --heading-color: #292922;
+    --SG-theme: #f60001;
+    --TC-theme: #FFCB43;
+    --RM-theme: #01638e;
+    --PQ-theme: #7f5140;
+
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --link-color: #rgb(0, 0, 255);
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
 }
 
 [data-theme="dark"] {
-  --primary-color: #9A97F3;
-  --secondary-color: #818cab;
-  --link-color: #ffee00;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
-}
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --link-color: #ffee00;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+};
 
 body {
-  color: var(--font-color);
-  background-color: var(--bg-color);
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  max-width: 100vw;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    max-width: 100vw;
 }
 
 #skittles_text {
-  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
-  text-align: center;
-  background-size: 800% 800%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 24px;
-  -webkit-animation: rainbow 8s ease infinite;
-          animation: rainbow 8s ease infinite;
-}
-
-@-webkit-keyframes rainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 25%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
 }
 
 @keyframes rainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 25%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%
+    }
+    
+    50% {
+        background-position: 100% 25%
+    }
+    
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 @media only screen and (min-width: 320px) {
@@ -85,6 +76,8 @@ body {
         color: var(--bg-color);
         background-color: var(--primary-color);
         -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
     }
 
@@ -104,118 +97,31 @@ body {
     img {
         width: 100%;
     }
-
-    img.active {
-        filter: brightness(100%) saturate(0);
-    }
-
+    
     #intro-section {
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    .menu_txt {
-        display: none;
-    }
-
-    #my-work {
-        display: none;
-    }
-
     .my-work-nav {
         overflow: hidden;
         margin-bottom: 50px;
+        & > a {
+            float: right;
+            color: black;
+            background-color: white;
+            text-align: center;
+            padding: 7px 10px;
+            font-size: 17px;
+        }
     }
 
     .my-work-nav a {
-        float: left;
-        color: black;
-        background-color: white;
-        text-align: center;
-        font-size: 17px;
         text-decoration: none;
-    }
-
-    .my-work-nav a:hover {
-        background-color: lightgray;
-        color: black;
-    }
-
-    .my-work-nav h2 {
-        float: left;
-    }
-
-    .my-work-nav #SG.active {
-        background-color: var(--SG-theme);
-        color: white;
-        -webkit-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        -o-transition: background-color 0.5s ease;
-        transition: background-color 0.5s ease;
-    }
-
-    .my-work-nav #TC.active {
-    background-color: var(--TC-theme);
-    color: white;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
-    }
-
-    .my-work-nav #RM.active {
-    background-color: var(--RM-theme);
-    color: white;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
-    }
-
-    .my-work-nav #PQ.active {
-    background-color: var(--PQ-theme);
-    color: white;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
-    }
-
-    nav {
-        width: 100%;
     }
 
     p {
         margin-bottom: 20px;
-    }
-
-    /* The sticky class is added to the header 
-    with JS when it reaches its scroll position */
-    .sticky {
-        position: sticky;
-        top: 0;
-        right: 0;
-        background-color: white;
-        -webkit-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        -o-transition: background-color 0.5s ease;
-        transition: background-color 0.5s ease;
-    };
-
-    /* Add some top padding to the page content to 
-    prevent sudden quick movement (as the header gets 
-    a new position at the top of the page (position:fixed 
-    and top:0) */
-    .sticky + .content {
-        padding-top: 102px;
-    }
-
-    .svg {
-        filter: brightness(0) saturate(100%);
-    }
-
-    ul {
-        display: flex;
     }
 
     .web {
@@ -229,13 +135,7 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
-    
-    .my-work-nav a {
-        float: right;
-        color: black;
-        background-color: white;
-        text-align: center;
-        padding: 7px 10px;
+
 }
 
 /* 
@@ -406,12 +306,103 @@ body {
         flex-wrap: wrap;
     };
 
-/* Clear floats after the columns */
-/* .row:after {
+    .my-work-nav {
+        background-color: #333;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+    .my-work-nav a {
+        float: right;
+        color: black;
+        background-color: white;
+        text-align: center;
+        padding: 7px 10px;
+        font-size: 17px;
+    }
+
+    .my-work-nav a {
+        text-decoration: none;
+    }
+
+    /* Change the color of links on hover */
+    /* .my-work-nav a:hover {
+        background-color: lightgray;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    /* .my-work-nav #SG.active {
+        background-color: var(--SG-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav #TC.active {
+        background-color: var(--TC-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav #RM.active {
+        background-color: var(--RM-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav #PQ.active {
+        background-color: var(--PQ-theme);
+        color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+    .my-work-nav h2 {
+        float: left;
+    } */
+
+    /* Clear floats after the columns */
+    /* .row:after {
         content: "";
         display: table;
         clear: both;
     } */
+
+    /* The sticky class is added to the header 
+    with JS when it reaches its scroll position */
+    /* .sticky {
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }; */
+
+    /* Add some top padding to the page content to 
+    prevent sudden quick movement (as the header gets 
+    a new position at the top of the page (position:fixed 
+    and top:0) */
+
+    /* .sticky + .content {
+        padding-top: 102px;
+      }
+
+} */
 
 /* .primaryShowcaseImage {
     max-inline-size: -webkit-fill-available;
@@ -597,4 +588,3 @@ body {
 } 
 
 */
-/*# sourceMappingURL=style.css.map */
