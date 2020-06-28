@@ -286,47 +286,111 @@ body {
 
 @media only screen and (min-width: 550px) {
 
+    blockquote {
+        max-width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    button {
+        max-width: 50%;
+    }
+
+    #intro-section {
+        display: flex;
+    }
+
+    .item-description {
+        max-width: 70%;
+        margin: auto auto 50px auto;
+        /* padding: 0; */
+    }
+
+    .left-panel {
+        padding: 20px;
+    }
+
+    .right-panel {
+        padding: 20px;
+    }
+
+    .menu_txt {
+        display: unset;
+        vertical-align: super;
+    }
+
+    .my-work-nav {
+        margin-bottom: 0;
+    }
+
+    .svg {
+        height: 50px;
+        float: left;
+    }
+
+
 }
 
 @media only screen and (min-width: 800px) {
     
+    .hero_sg {
+        background-color: var(--SG-theme);
+    }
+
+    .hero_tc {
+        background-color: var(--TC-theme);
+    }
+
+    .hero_rm {
+        background-color: var(--RM-theme);
+    }
+
+    .hero_pq {
+        background-color: var(--PQ-theme);
+    }
+    
+    img {
+        width: unset;
+        float: unset;
+    }
+
+    .menu_txt {
+        float: right;
+        margin-top: 17px;
+        margin-right: 20px;
+    }
+
+    #my-work {
+        display: unset;
+        font-size: 20px;
+        margin: 25px;
+    }
+
+    .my-work-nav {
+        overflow: inherit;
+    }
+
     .my-work-nav a {
         float: right;
-        color: black;
-        background-color: white;
         text-align: center;
         padding: 7px 10px;
+}
+
+.primaryShowcaseImage {
+    height: -webkit-fill-available;
+}
+
+.svg {
+    margin-top: 5px;
 }
 
 }
 /* 
     
 
-    .hero_image {
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        line-height: normal;
-    }
-    
-    button {
-        min-width: 80%;
-        height: 75px;
-        margin-bottom: 20px;
-        font-size: 20px;
-        background-color: transparent;
-    };
 
-    blockquote {
-        font-size: 16px;
-        font-style: italic;
-        font-family: monospace;
-        margin: 100px auto;
-    };
-    
-    footer {
-        margin-bottom: 20px;
-        border-top: lightgray 2px solid;
-    }
     
     h1 {
         font-size: 25px;
