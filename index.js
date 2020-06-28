@@ -48,7 +48,7 @@ function generateButtons(array) {
         .map(btn =>
             `
                 <button
-                    class="showcase_button"
+                    class="showcase-button"
                     onclick="window.open('${btn.link}','_blank')"
                 >
                     ${btn.title}
@@ -68,21 +68,21 @@ function generateShowcase(array) {
                 </div>
                 <div class="showcase_content">
                     <div class="title_tech">
-                        <p class="showcase_captions">
-                            ${project.yearCreated}
-                        </p>
                         <h2 class="project_title">
                             ${project.titleOfProject}
                         </h2>
-                        <p class="showcase_captions showcase_captions_bottom">
-                            ${generateTechUsed(project.techUsed)}
+                        <p class="year-created">
+                            ${project.yearCreated}
                         </p>
+                        <div class="tech-used-div">
+                            ${generateTechUsed(project.techUsed)}
+                        </div>
                     </div>
                     <div class="desc_buttons">
-                        <p class="item_description">
+                        <p class="item-description">
                             ${project.description}
                         </p>
-                        <div class="showcase_item_buttons_bar">
+                        <div class="button-div">
                             ${generateButtons(project.buttons)}
                     </div>
                     </div>
