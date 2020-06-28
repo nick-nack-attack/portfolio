@@ -66,7 +66,7 @@ function generateShowcase(array) {
                 <div class="hero_image ${project.showcaseImage.id}">
                     ${generateImage(project.showcaseImage)}
                 </div>
-                <div class="showcase_content">
+                <div class="showcase-content">
                     <div class="title_tech">
                         <h2 class="project_title">
                             ${project.titleOfProject}
