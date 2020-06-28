@@ -63,7 +63,9 @@ function generateShowcase(array) {
     return array.map(project => 
         `
             <div id="${project.showcaseImage.id}" class="showcase">
+                <div class="hero_image ${project.showcaseImage.id}">
                     ${generateImage(project.showcaseImage)}
+                </div>
                 <div class="showcase_content">
                     <div class="title_tech">
                         <p class="showcase_captions">

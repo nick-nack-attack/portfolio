@@ -5,7 +5,7 @@ const STORE = [
             {
                 id: "hero_sg",
                 class: "primaryShowcaseImage",
-                src: "images/hero_sobergrid.jpg",
+                src: "images/sg_banner.jpg",
                 alt: "image showing showcase of Sober Grid mobile app"
             },
         yearCreated: '2017-2019',
@@ -41,7 +41,7 @@ const STORE = [
             {
                 id: "hero_tc",
                 class: "primaryShowcaseImage",
-                src: "images/hero_truthchecker.jpg",
+                src: "images/tf_noborder.jpg",
                 alt: "image showing showcase of Truth Checker web app"
             },
         yearCreated: '2020',
@@ -76,7 +76,7 @@ const STORE = [
             {
                 id: "hero_rm",
                 class: "primaryShowcaseImage",
-                src: "images/hero_rmbrme.jpg",
+                src: "images/rmbrme_noborder.jpg",
                 alt: "image showing showcase of 'remember me' web app"
             },
         yearCreated: '2020',

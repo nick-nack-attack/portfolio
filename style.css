@@ -4,6 +4,12 @@
         box-sizing: border-box;
     }
 
+    .hero_image {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        line-height: normal;
+    }
+
     :root {
         --primary-color: #302AE6;
         --secondary-color: #536390;
@@ -13,7 +19,7 @@
         --heading-color: #292922;
         /* Project theme colors */
         --SG-theme: #f60001;
-        --TC-theme: #F4AA00;
+        --TC-theme: #FFCB43;
         --RM-theme: #01638e;
         --PQ-theme: #7f5140;
     };
@@ -202,6 +208,22 @@
         text-align: center;
 
     }
+
+    .hero_sg {
+        background-color: var(--SG-theme);
+    }
+
+    .hero_tc {
+        background-color: var(--TC-theme);
+    }
+
+    .hero_rm {
+        background-color: var(--RM-theme);
+    }
+
+    .hero_pq {
+        background-color: var(--PQ-theme);
+    }
     
     .dark-mode {
         background-color: black;
@@ -237,7 +259,6 @@
         display: flex;
         flex-wrap: wrap;
     };
-    
 
     /* Add a black background color to the top navigation */
     .my-work-nav {
