@@ -138,7 +138,6 @@ $(window).on("scroll", function() {
 
         let sectionLink = $(this);
         let section = $(sectionLink.attr('href'));
-        let svgLink = $(this);
 
             // if the top of the section is less than the current position
             // or if the top of the link plus the section height is more than the current 

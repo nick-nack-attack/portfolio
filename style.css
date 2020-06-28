@@ -211,6 +211,11 @@ body {
         width: 100%;
     }
 
+    #nick_hero {
+        position: absolute;
+        display: none;
+    }
+
     p {
         margin-bottom: 20px;
     }
@@ -362,6 +367,10 @@ body {
         float: unset;
     }
 
+    .item-description {
+        margin-top: 50px;
+    }
+
     .menu_txt {
         float: right;
         margin-top: 17px;
@@ -382,7 +391,13 @@ body {
         float: right;
         text-align: center;
         padding: 7px 10px;
-}
+    }
+
+    #nick_hero {
+        display: unset;
+        height: 175px;
+        float: left;
+    }
 
     .primaryShowcaseImage {
         height: -webkit-fill-available;
@@ -398,6 +413,11 @@ body {
 
     .svg {
         margin-top: 5px;
+    }
+
+    .title_tech {
+        width: -webkit-fill-available;
+
     }
 
 }
