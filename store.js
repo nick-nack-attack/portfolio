@@ -55,7 +55,7 @@ const STORE = [
                 "Express", 
                 "PostgreSQL"
             ],
-        description: "A parody database for the truth. This application is a promotion piece for a music album. Users can submit facts to be approved by the administrator. The admin login is purposely left public to allow for users to approved or disapprove their own facts.",
+        description: "A parody database for the truth. This application is a promotion piece for a music album. Users can submit facts to be approved by the administrator. The admin login is purposely left public to allow for users to approve or disapprove their own facts.",
         buttons: [
             {
                 title: "View Live",
