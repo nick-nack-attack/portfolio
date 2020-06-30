@@ -73,6 +73,10 @@ body {
   }
 }
 
+.hide {
+    display: none;
+}
+
 @media only screen and (min-width: 320px) {
 
     blockquote {
@@ -107,6 +111,10 @@ body {
         align-items: center;
     }
 
+    .fab, .fas {
+        margin-right: 5px;
+    }
+
     h1, h2 {
         margin: 30px;
         text-align: center;
@@ -138,6 +146,10 @@ body {
     .item-description {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    li {
+        border-right: 3px solid var(--bg-color);
     }
 
     .menu_txt {
@@ -374,13 +386,14 @@ body {
     .menu_txt {
         float: right;
         margin-top: 17px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     #my-work {
         display: unset;
         font-size: 20px;
-        margin: 25px;
+        margin: 25px 0 25px 20px;
+        font-size: smaller;
     }
 
     .my-work-nav {
@@ -421,335 +434,3 @@ body {
     }
 
 }
-/* 
-    
-
-
-    
-    h1 {
-        font-size: 25px;
-        margin: 70px auto;
-    }
-    
-    h2 {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    h3 {
-        font-size: 18px;
-        font-weight: bolder;
-        margin: 0;
-    }
-
-    .project_title {
-        font-weight: bold;
-        font-size: x-large;
-    }
-    
-    main {
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 300px;
-        max-width: 80%;
-    };
-    
-    section {
-        margin: auto;
-        margin-bottom: 100px;
-    }
-
-    .theme-switch {
-        position: absolute;
-        right: 0;
-        top: 10%;
-        font-size: 16px;
-        margin-right: 10%;
-    }
-
-    .tech-label {
-        color: white;
-        background-color: black;
-        padding: 2px 10px;
-        min-width: 150px;
-        border-radius: 10px;
-    }
-
-    .dark-label {
-        background-color: #2d2d2e;
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: white;
-        padding-inline-start: 0;
-        padding: 0;
-    }
-
-    #projects-area > h2 {
-        text-align: left;
-    }
-
-    .column {
-        float: left;
-        width: 33.33%;
-    };
-    
-    .contact-me-link:hover,
-    .contact-me-link:focus {
-        border: rgb(180, 0, 0) 1px solid;
-    }
-    
-    .contact-button {
-        margin: 25px auto;
-    };
-
-    div.content {
-        padding: 16px;
-        max-width: 80% !important;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .hero_sg {
-        background-color: var(--SG-theme);
-    }
-
-    .hero_tc {
-        background-color: var(--TC-theme);
-    }
-
-    .hero_rm {
-        background-color: var(--RM-theme);
-    }
-
-    .hero_pq {
-        background-color: var(--PQ-theme);
-    }
-    
-    .dark-mode {
-        background-color: black;
-        color: white;
-    }
-
-    .dark {
-        background-color: var();
-        color: black;
-    }
-
-    .dark-button {
-        border: 2px white solid;
-        color: white;
-    }
-
-    .showcase {
-        text-align: left;
-        margin-top: 75px;
-    }
-    
-    .showcase_item_buttons_bar {
-        margin-bottom: 120px;
-    text-align: center
-    };
-
-    .primaryShowcaseImage {
-        width: 300px;
-    };
-    
-    .showcase_captions {
-        font-size: 9px;
-        display: flex;
-        flex-wrap: wrap;
-    };
-
-/* Clear floats after the columns */
-/* .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    } */
-
-/* .primaryShowcaseImage {
-    max-inline-size: -webkit-fill-available;
-}
-
-.theme-switch {
-    top: 15px;
-    right: 15px;
-    margin: 0;
-}
-
-#intro-section {
-    text-align: left;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.web {
-    display: none;
-}
-
-#my-work {
-    display: none;
-}
-
-.mobile {
-    display: inline;
-}
-
-
-@media only screen and (min-width: 550px) {
-
-    .my-work-nav a {
-        padding: 14px 16px;
-    }
-
-    #my-work {
-        display: initial;
-    }
-
-    .mobile {
-        display: none;
-    }
-
-    button {
-        font-size: 16px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 7px;
-    }
-
-    ul {
-        font-size: 13px;
-    }
-
-    .web {
-        display: none;
-    }
-
-    #intro-section {
-        text-align: left;
-    }
-
-    .primaryShowcaseImage {
-        max-inline-size: -webkit-fill-available;
-    }
-
-    main {
-        width: 90%;
-    }
-
-    .theme-switch {
-        top: 20px;
-        right: 20px;
-        margin: 0;
-    }
-
-    .left-panel {
-        display: unset;
-    }
-
-    .right-panel {
-        display: unset;
-    }
-
-}
-
-@media only screen and (min-width: 800px) {
-
-    li {
-        font-size: unset;
-    }
-
-    #my-work {
-        display: unset;
-    }
-
-    .web {
-        display: unset;
-    }
-
-    body {
-        background-color: var(--bg-color);
-        -webkit-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        -o-transition: background-color 0.5s ease;
-        transition: background-color 0.5s ease;
-    }
-
-    .showcase_content {
-        display: flex;
-    }
-
-    .fa-linkedin, 
-    .fa-envelope-open-text,
-    .fa-github {
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
-
-    .title_tech {
-        height: 300px;
-        min-width: 300px;
-    }
-
-    .desc_buttons {
-        padding-left: 50px;
-    }
-
-    button {
-        min-width: unset;
-        height: 50px;
-        font-size: 15px;
-        margin-bottom: 5px;
-    }
-
-    main {
-        width: 90% !important;
-    }
-
-    .contact-button {
-        display: grid;
-        height: 200px;
-        width: 200px;
-        font-size: 18px;
-        margin: auto 20px;
-    }
-
-    .desktop_text {
-        display: block;
-    }
-
-    .left-panel {
-        width: 100%;
-        padding-right: inherit;
-    }
-
-    .right-panel {
-        width: 50%;
-        padding-left: inherit;
-    }
-    
-    .primaryShowcaseImage {
-        width: 650px;
-    }
-
-    #contact-section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-top: 200px;
-    }
-
-    #intro-section {
-        display: flex;
-        padding-left: 30px;
-        padding-right: 30px;
-        text-align: left;
-    }  */
-/*
