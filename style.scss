@@ -65,7 +65,7 @@ body {
 @media only screen and (min-width: 320px) {
 
     button {
-        border: 2px var(--primary-color) solid;
+        border: 5px var(--primary-color) solid;
         border-radius: 10px;
         color: var(--primary-color);
         cursor: pointer;
@@ -83,7 +83,7 @@ body {
 
     h1, h2 {
         margin: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     h1 {
@@ -95,12 +95,16 @@ body {
     }
 
     img {
-        width: 100%;
+        width: 50%;
     }
     
     #intro-section {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .header-div {
+        text-align: left;
     }
 
     .my-work-nav {

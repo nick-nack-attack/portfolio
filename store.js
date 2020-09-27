@@ -5,7 +5,7 @@ const STORE = [
             {
                 id: "hero_sg",
                 class: "primaryShowcaseImage",
-                src: "images/sg_banner.jpg",
+                src: "images/banner-sg-portfolio.png",
                 alt: "image showing showcase of Sober Grid mobile app"
             },
         yearCreated: '2017-2019',
@@ -18,7 +18,7 @@ const STORE = [
                 "AWS", 
                 "JIRA"
             ],
-        description: "Managed software development and create UI/UX for the company’s flagship iOS, Android, and web apps with overseas software engineers. Achieved 4.9/5 Apple App Store and 4.5/5 Google Play Store rating. First place finish in Robert Wood Johnson Foundation competition (out of 97). Included in Best Alcohol Addiction Recovery Apps of 2019 by Healthline.",
+        description: "Managed software development and create UI/UX for the company's flagship iOS, Android, and web apps with overseas software engineers. Achieved 4.9/5 Apple App Store and 4.5/5 Google Play Store rating. First place finish in Robert Wood Johnson Foundation competition (out of 97). Included in Best Alcohol Addiction Recovery Apps of 2019 by Healthline.",
         buttons: [
             // refactored buttons to include title and link key
             // and possible to insert n number of buttons
