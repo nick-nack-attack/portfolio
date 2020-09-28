@@ -51,6 +51,7 @@ function generateButtons(array) {
                     class="showcase-button"
                     onclick="window.open('${btn.link}','_blank')"
                 >
+                <i class="${btn.icon}"></i>
                     ${btn.title}
                 </button>
             `
@@ -67,25 +68,29 @@ function generateShowcase(array) {
                     ${generateImage(project.showcaseImage)}
                 </div>
                 <div class="showcase-content">
-                    <div class="title_tech">
-                        <h2 class="project_title">
+
+                    <div class="third">
+                        <h2>
                             ${project.titleOfProject}
                         </h2>
-                        <p class="year-created">
+                        <p>
                             ${project.yearCreated}
                         </p>
                         <div class="tech-used-div">
                             ${generateTechUsed(project.techUsed)}
                         </div>
                     </div>
-                    <div class="desc_buttons">
-                        <p class="item-description">
+
+                    <div class="third">
+                        <p>
                             ${project.description}
                         </p>
-                        <div class="button-div">
-                            ${generateButtons(project.buttons)}
                     </div>
+
+                    <div class="third">
+                      ${generateButtons(project.buttons)}
                     </div>
+
                 </div>
             </div>
         `

@@ -11,7 +11,7 @@
     --TC-theme: #FFCB43;
     --RM-theme: #01638e;
     --PQ-theme: #7f5140;
-    --primary-color: #302AE6;
+    --primary-color: #292922 ; /* #302AE6; */
     --secondary-color: #536390;
     --link-color: rgb(0, 0, 255);
     --font-color: #424242;
@@ -38,7 +38,7 @@ body {
     max-width: 100vw;
 }
 
-#skittles_text {
+.skittles_text {
     background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
     text-align: center;
     background-size: 800% 800%;
@@ -89,12 +89,12 @@ body {
     button {
         border: 3px var(--primary-color) solid;
         background-color: var(--bg-color);
-        /* border-radius: 10px; */
         padding: 10px 15px;
-        width: 80%;
+        width: 100%;
+        max-width: 300px;
         color: var(--primary-color);
         cursor: pointer;
-        margin-bottom: 20px;
+        margin: 10px;
     }
 
     button:hover,
@@ -109,6 +109,10 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #contact-section {
+        margin-top: 50px
     }
 
     .fab, .fas {
@@ -130,8 +134,13 @@ body {
         overflow: auto;
     }
 
+    .inline-scroll-text {
+        font-size: small; 
+        text-align: left;
+    }
+
     .nick_hero_img {
-        width: 300px;
+        max-width: 300px;
     }
 
     img {
@@ -147,9 +156,8 @@ body {
         padding-right: 30px;
     }
 
-    .item-description {
-        padding-left: 40px;
-        padding-right: 40px;
+    .left-panel {
+        max-width: 500px;
     }
 
     .right-panel {
@@ -178,8 +186,9 @@ body {
         color: black;
         background-color: var(--nav-color);
         text-align: center;
-        font-size: 17px;
+        font-size: 15px;
         text-decoration: none;
+        padding: 7px 10px;
     }
 
     .my-work-nav a:hover {
@@ -229,7 +238,7 @@ body {
 
     nav {
         width: 100%;
-    }
+    } 
 
     p {
         margin-bottom: 20px;
@@ -237,6 +246,10 @@ body {
 
     .showcase {
         padding-top: 175px;
+    }
+
+    .showcase-content {
+        margin: 30px;
     }
 
     /* The sticky class is added to the header 
@@ -262,7 +275,7 @@ body {
 
     .svg {
         filter: brightness(0) saturate(100%);
-        height: 7em;
+        width: 100%;
     }
 
     .theme-switch {
@@ -279,20 +292,15 @@ body {
         border: 1px var(--secondary-color) solid;
     }
 
-    .title_tech {
-        margin: 30px;
-        text-align: center;
-    }
-
     .tech-used-div {
         display: flex;
         flex-flow: wrap;
-        justify-content: center;
     }
 
     ul {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .web {
@@ -310,21 +318,22 @@ body {
         margin-right: auto;
     }
 
-    button {
+    #contact-section {
         max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #intro-section {
         display: flex;
     }
 
-    .item-description {
-        max-width: 70%;
-        margin: auto auto 50px auto;
-    }
-
     .left-panel {
         padding: 20px;
+    }
+
+    .menu_txt {
+        display: block;
     }
 
     .my-work-nav {
@@ -348,45 +357,42 @@ body {
         margin-right: auto;
     }
 
-    .hero_sg {
-        background-color: var(--SG-theme);
-    }
-
-    .hero_tc {
-        background-color: var(--TC-theme);
-    }
-
-    .hero_rm {
-        background-color: var(--RM-theme);
-    }
-
-    .hero_pq {
-        background-color: var(--PQ-theme);
-    }
-
-    .item-description {
-        margin-top: 50px;
-    }
-
-    .right-panel {
-        display: unset;
-    }
-
     #my-work {
-        display: unset;
-        /*font-size: 20px;*/
         margin: 25px 0 25px 20px;
         font-size: smaller;
     }
 
-    .my-work-nav {
-        overflow: inherit;
+    .primaryShowcaseImage {
+        overflow: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .inline-scroll-text {
+        display: none;
+    }
+
+    .menu_txt {
+        display: unset;
+        vertical-align: super;
+        float: right;
+        margin-top: 17px;
+        margin-right: 10px;
     }
 
     .my-work-nav a {
         float: right;
-        text-align: center;
-        padding: 7px 10px;
+    }
+
+    #my-work {
+        display: unset;
+        margin-left: 20px;
+    }
+
+    nav {
+        height: 73px;
     }
 
     #nick_hero {
@@ -395,30 +401,31 @@ body {
         float: left;
     }
 
-    .primaryShowcaseImage {
-        overflow: auto;
+    ul {
+        display: unset;
     }
 
-    .showcase-button {
-        max-width: 300px;
+    li {
+        border-left: 5px solid var(--bg-color);
+        border-right: 0px;
+    }
+
+    .right-panel {
+        display: unset;
+    }
+
+    .svg {
+        width: auto;
+        margin-top: 5px;
+    }
+
+    .third {
+        max-width: 30%;
     }
 
     .showcase-content {
         display: flex;
+        justify-content: space-between;
     }
 
-    .svg {
-        margin-top: 5px;
-    }
-
-}
-
-@media only screen and (min-width: 1000px) {
-    .menu_txt {
-        display: unset;
-        vertical-align: super;
-        float: right;
-        margin-top: 17px;
-        margin-right: 10px;
-    }
 }
