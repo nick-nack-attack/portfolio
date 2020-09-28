@@ -15,7 +15,7 @@
     <!-- scripts and links -->
     <script src="https://kit.fontawesome.com/026298f9de.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/1c363eed50.js"></script>
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -24,161 +24,128 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <div class="">
-                <!-- <img id="nick_hero" src="images/nick_circle.png" alt="picture of Nick"> -->
-                <h1>
-                    Good
-                    <span id="period-of-day"></span>
-                </h1>
-                <h2>
-                    I'm Nick.
-                </h2>
-            </div>
-            <label class="theme-switch" for="checkbox">
-                Toggle Dark Mode
-                <input 
-                    type="checkbox"
-                    id="checkbox"    
-                />
-            </label>
-        </header>
-        <section id="intro-section">
-            <div class="left-panel">
-                <p>
-                    Full-stack web developer.
-                    UI/UX specialist.
-                </p>
-                <p>
-                    I've managed overseas software
-                    development teams, online social communities,
-                    product, branding, and marketing.
-                </p>
-                <p>
-                    I like Wikipedia.
-                    I dislike ionizing radiation.
-                    I am quite fond of Duolingo.
-                </p>
-            </div>
-            <div class="right-panel">
-                <h3>My mission? &#128640;</h3>
-                <p>
-                    To serve others, be a source of
-                    compassion and encouragement
-                    to those around me, and join an awesome team to develop awesome products!
-                </p>
-                <p>
-                    ... I love <span id="skittles_text">Skittles</span>, too.
-                </p>
-                <p class="mobile">
-                    Check out my work below.
-                </p>
-            </div>
-        </section>
+<main>
 
-        
-        <nav 
-            class="my-work-nav nav" 
-            id="myWorkNav"
-        >
-            <h2 id="my-work"> My Work </h2>
-                <ul>
-                    <li 
-                        id="pq_li" 
-                    >
-                        <a 
-                            id="PQ" 
-                            href="#hero_pq"
-                        >
-                            <img class="svg" src="images/pineapple_icon.svg" alt="pineapple icon">
-                            <p class="menu_txt">
-                                Pineapple Quiz
-                            </p>
-                        </a>
-                    </li>
-                    <li 
-                        id="rm_li"
-                    >
-                        <a 
-                            id="RM" 
-                            href="#hero_rm"
-                        > 
-                            <img class="svg" src="images/rm_icon.svg" alt="rmbrme icon">
-                            <p class="menu_txt">
-                                rmbrme 
-                            </p>
-                        </a>
-                    </li>
-                    <li 
-                        id="tc_li"
-                    >
-                        <a 
-                            id="TC" 
-                            href="#hero_tc"
-                        > 
-                            <img class="svg" src="images/tc_icon.svg" alt="TruthChecker icon">
-                            <p class="menu_txt">
-                            Truth Checker 
-                            </p>
-                        </a>
-                    </li>
-                    <li 
-                        id="sg_li"
-                    >
-                        <a 
-                            id="SG" 
-                            href="#hero_sg"
-                        > 
-                            <img class="svg" src="images/sg_icon.svg" alt="Sober Grid icon">
-                            <p class="menu_txt">
-                                Sober Grid 
-                            </p>
-                        </a>
-                    </li>
-            </ul>
-    </nav>
-        <br/>
-        <br/>
+    <header>
+        <label class="theme-switch" for="checkbox">
+            Toggle Dark Mode
+            <input type="checkbox" id="checkbox"/>
+        </label>
+    </header>
 
-        <section>
-            <h3 class='hide'>Selected Projects</h3>
-            <div 
-                class="content" 
-                id="projects-area"
-            >
-            </div>
-        </section>
-
-        <section id="contact-section">
+    <section id="intro-section">
+        <div class="left-panel">
+            <h1>
+                Good
+                <span id="period-of-day"></span>
+            </h1>
             <h2>
-                Hit me up on ...
+                I'm Nick.
             </h2>
-            <button class="contact-button" onclick="window.open(`https://www.linkedin.com/in/nick-f/`,`_blank`)">
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-            </button>
-            <button class="contact-button" onclick="window.open('mailto:nick.nack.attack.1@gmail.com?subject=I checked out your portfolio','_blank')">
-                <i class="fas fa-envelope-open-text"></i>
-                Email
-            </button>
-            <button class="contact-button" onclick="window.open('https://github.com/nick-nack-attack','_blank')">
-                <i class="fab fa-github"></i>
-                GitHub
-            </button>
-        </section>
-<footer>
-    <blockquote>
-        "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength &#128170;"
-        <br><br>~ Arnold Schwarzenegger
-    </blockquote>
-</footer>
-    </main>
+            <p>
+                Product manager.<br>
+                Full-stack web developer.
+            </p>
+            <p>
+                I've managed overseas software
+                development teams, online social communities,
+                product, branding, and marketing.
+            </p>
+            <p>
+                I love Wikipedia.<br>
+                Me encanta el Duolingo.
+            </p>
+            <p class="inline-scroll-text skittles_text">
+                <i class="fas fa-angle-double-down"></i>
+                Scroll down to see my work
+            </p>
+        </div>
+        <div class="right-panel">
+            <img id="nick_hero_img" src="images/hero-img-nick.svg" alt="nick with computer and pineapple">
+            <p style="text-align: right">
+                ... I love <span class="skittles_text">Skittles</span>, too.
+            </p>
+        </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    <nav class="my-work-nav nav" id="myWorkNav">
+        <h2 id="my-work">
+            <i class="fas fa-angle-double-down"></i>
+            Scroll down to see my work
+        </h2>
+        <ul>
+            <li id="sg_li">
+                <a id="SG" href="#hero_sg">
+                    <img class="svg" src="images/icon-sg.svg" alt="Sober Grid icon">
+                    <p class="menu_txt">
+                        Sober Grid
+                    </p>
+                </a>
+            </li>
+            <li id="tc_li">
+                <a id="TC" href="#hero_tc">
+                    <img class="svg" src="images/icon-tc.svg" alt="TruthChecker icon">
+                    <p class="menu_txt">
+                        Truth Checker
+                    </p>
+                </a>
+            </li>
+            <li id="rm_li">
+                <a id="RM" href="#hero_rm">
+                    <img class="svg" src="images/icon-rm.svg" alt="rmbrme icon">
+                    <p class="menu_txt">
+                        rmbrme
+                    </p>
+                </a>
+            </li>
+            <li id="pq_li">
+                <a id="PQ" href="#hero_pq">
+                    <img class="svg" src="images/icon-pq.svg" alt="pineapple icon">
+                    <p class="menu_txt">
+                        Pineapple Quiz
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+    <br/>
+
+    <section>
+        <h3 class='hide'>Selected Projects</h3>
+        <div class="content" id="projects-area">
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2> Hit me up on ... </h2>
+        <button class="contact-button" onclick="window.open(`https://www.linkedin.com/in/nick-f/`,`_blank`)">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+        </button>
+        <button class="contact-button"
+                onclick="window.open('mailto:nick.nack.attack.1@gmail.com?subject=I checked out your portfolio','_blank')">
+            <i class="fas fa-envelope-open-text"></i>
+            Email
+        </button>
+        <button class="contact-button" onclick="window.open('https://github.com/nick-nack-attack','_blank')">
+            <i class="fab fa-github"></i>
+            GitHub
+        </button>
+    </section>
+    <footer>
+        <blockquote>
+            "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships
+            and decide not to surrender, that is strength &#128170;"
+            <br><br>~ Arnold Schwarzenegger
+        </blockquote>
+    </footer>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="store.js"></script>
-    <script src="index.js"></script>
+<script src="store.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
