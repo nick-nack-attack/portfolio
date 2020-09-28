@@ -79,20 +79,17 @@ body {
 
 @media only screen and (min-width: 320px) {
 
-    /* padding-left: 30px;
-        padding-right: 30px; */
-
     blockquote {
         color: var(--font-color);
-        font-size: 16px;
         font-family: monospace;
+        font-size: 16px;
         padding: 45px;
     }
 
     button {
         border: 3px var(--primary-color) solid;
         background-color: var(--bg-color);
-        /*border-radius: 10px;*/
+        /* border-radius: 10px; */
         padding: 10px 15px;
         width: 80%;
         color: var(--primary-color);
