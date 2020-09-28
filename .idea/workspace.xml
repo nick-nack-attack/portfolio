@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9a44bf0-971a-4d36-a472-868a917af34d" name="Default Changelist" comment="- style changes in css" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hvHZO6keiryGtOKBvUC4M8er3t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9a44bf0-971a-4d36-a472-868a917af34d" name="Default Changelist" comment="" />
+      <created>1600884701951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600884701951</updated>
+      <workItem from="1600884703204" duration="3847000" />
+      <workItem from="1601055421610" duration="5589000" />
+      <workItem from="1601067861979" duration="7162000" />
+    </task>
+    <task id="LOCAL-00001" summary="- styling changes to intro and showcase items">
+      <created>1601242103044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601242103044</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- style changes in css">
+      <created>1601247780247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601247780247</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- style changes in css">
+      <created>1601308531869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601308531869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- styling changes to intro and showcase items" />
+    <MESSAGE value="- style changes in css" />
+    <option name="LAST_COMMIT_MESSAGE" value="- style changes in css" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2138" y="99" key="EditFileWatcherDialog" timestamp="1600885418364">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="2138" y="99" key="EditFileWatcherDialog/1440.-157.1920.1057/0.23.1440.828@1440.-157.1920.1057" timestamp="1600885418364" />
+    <state x="248" y="179" key="IDE.errors.dialog" timestamp="1601308688183">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="248" y="179" key="IDE.errors.dialog/1440.23.1920.1057/0.23.1440.828@0.23.1440.828" timestamp="1601308688183" />
+    <state x="220" y="75" key="SettingsEditor" timestamp="1601059850441">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="220" y="75" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1601059850441" />
+    <state x="260" y="177" key="Vcs.Push.Dialog.v2" timestamp="1601308537640">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="260" y="177" key="Vcs.Push.Dialog.v2/1440.23.1920.1057/0.23.1440.828@0.23.1440.828" timestamp="1601308537640" />
+    <state x="458" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601308526859">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="458" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1601241319632" />
+    <state x="458" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1440.23.1920.1057/0.23.1440.828@0.23.1440.828" timestamp="1601308526859" />
+  </component>
+</project>
